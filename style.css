@@ -23,7 +23,136 @@
 		left: -100%;
 		position: relative;
 		visibility: hidden;
-		font-size: 10px;
+		font-size: 15px;
+	}
+	
+	.menu__mobile::before {
+		display: block;
+		position: fixed;
+		left: 0;
+		top: 5px;
+		content: '';
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		background: black;
+		opacity: 50%;
+	 }
+	
+	.wrap::before {
+		position: fixed;
+		left: 5px;
+		top: 15px;
+		display: inline;
+		content: '';
+		width: 15px;
+		height: 1px;
+		background: white;
+	}
+	.wrap::after {
+		position: fixed;
+		left: 5px;
+		top: 19px;
+		display: inline;
+		content: '';
+		width: 15px;
+		height: 1px;
+		background: white;
+	}
+
+@media (min-width: 481px){\
+
+	.box__link {
+		left: -100%;
+		position: relative;
+		visibility: hidden;
+		font-size: 15px;
+	}
+	
+	.menu__mobile::before {
+		display: block;
+		position: fixed;
+		left: 0;
+		top: 5px;
+		content: '';
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		background: black;
+		opacity: 50%;
+	 }
+	
+	.wrap::before {
+		position: fixed;
+		left: 5px;
+		top: 15px;
+		display: inline;
+		content: '';
+		width: 15px;
+		height: 1px;
+		background: white;
+	}
+	.wrap::after {
+		position: fixed;
+		left: 5px;
+		top: 19px;
+		display: inline;
+		content: '';
+		width: 15px;
+		height: 1px;
+		background: white;
+	}	
+	
+	@media (min-width: 641px) {
+	
+	.box__link {
+		left: -100%;
+		position: relative;
+		visibility: hidden;
+		font-size: 20px;
+	}
+	
+	.menu__mobile::before {
+		display: block;
+		position: fixed;
+		left: 0;
+		top: 5px;
+		content: '';
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		background: black;
+		opacity: 50%;
+	 }
+	
+	.wrap::before {
+		position: fixed;
+		left: 5px;
+		top: 15px;
+		display: inline;
+		content: '';
+		width: 15px;
+		height: 1px;
+		background: white;
+	}
+	.wrap::after {
+		position: fixed;
+		left: 5px;
+		top: 19px;
+		display: inline;
+		content: '';
+		width: 15px;
+		height: 1px;
+		background: white;
+	}
+	
+	@media (min-width: 961px) {
+		
+	.box__link {
+		left: -100%;
+		position: relative;
+		visibility: hidden;
+		font-size: 20px;
 	}
 	
 	.menu__mobile::before {
