@@ -1,11 +1,5 @@
-body {
-  font-family:arial;
-  height: 1500px;
-  width: 1500px;
-}
 .menu__box {
-	display: flex;
-	background: #008aff;
+	display: inline;
 	color: #fff;
 	padding: 15px 10px;
 	text-decoration: none;
@@ -14,7 +8,7 @@ body {
 }
 
 .menu__mobile {
-	position: relative;
+		position: relative;
 }
 
 .wrap {
@@ -23,34 +17,20 @@ body {
 
 .menu__box:hover { background: #5c8db7; }
 
-/* smartphones, iPhone, portrait 480x320 phones */
-@media (min-width: 320px) {
+@media (max-width: 480px) {
+	
 	.box__link {
-		justify-content: space-around;
-		flex-grow: 1;
-		font-size: 10px;
-		flex-direction: column;
-		visibility: hidden;
-	}
-		
-	.menu__box {
-		display: block;
-		position: fixed;
-		top: 0;
 		left: -100%;
-		width: 1500px;
-		height: 100%;
-		margin: 0;
-		padding: 80px 0;
-		list-style: none;
+		position: relative;
 		visibility: hidden;
+		font-size: 10px;
 	}
 	
 	.menu__mobile::before {
-		position: absolute;
+		display: block;
+		position: fixed;
 		left: 0;
 		top: 5px;
-		display: inline;
 		content: '';
 		width: 25px;
 		height: 25px;
@@ -60,65 +40,7 @@ body {
 	 }
 	
 	.wrap::before {
-		position: absolute;
-		left: 5px;
-		top: 15px;
-		display: inline;
-		content: '';
-		width: 15px;
-		height: 1px;
-		background: white;
-	}
-	.wrap::after {
-		position: absolute;
-		left: 5px;
-		top: 19px;
-		display: inline;
-		content: '';
-		width: 15px;
-		height: 1px;
-		background: white;
-	}
-}
-	
-/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
-@media (min-width: 481px) {
-  .box__link {
-    justify-content: space-around;
-    flex-grow: 1;
-    font-size: 15px;
-    flex-direction: column;
-    visibility: hidden;
-	}
-		
-	.menu__box {
-		display: block;
 		position: fixed;
-		top: 0;
-		left: -100%;
-		width: 300px;
-		height: 100%;
-		margin: 0;
-		padding: 80px 0;
-		list-style: none;
-		visibility: hidden;
-	}
-	
-	.menu__mobile::before {
-		position: absolute;
-		left: 0;
-		top: 5px;
-		display: inline;
-		content: '';
-		width: 25px;
-		height: 25px;
-		border-radius: 50%;
-		background: black;
-		opacity: 50%;
-	}
-	
-	.wrap::before {
-		position: absolute;
 		left: 5px;
 		top: 15px;
 		display: inline;
@@ -128,65 +50,7 @@ body {
 		background: white;
 	}
 	.wrap::after {
-		position: absolute;
-		left: 5px;
-		top: 19px;
-		display: inline;
-		content: '';
-		width: 15px;
-		height: 1px;
-		background: white;
-	}
-}
-	
-/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-@media (min-width: 641px) {
-	.box__link {
-    justify-content: space-around;
-    flex-grow: 1;
-    font-size: 20px;
-    flex-direction: column;
-    visibility: hidden;
-	}
-		
-	.menu__box {
-		display: block;
 		position: fixed;
-		top: 0;
-		left: -100%;
-		width: 300px;
-		height: 100%;
-		margin: 0;
-		padding: 80px 0;
-		list-style: none;
-		visibility: hidden;
-	}
-	
-	.menu__mobile::before {
-		position: absolute;
-		left: 0;
-		top: 5px;
-		display: inline;
-		content: '';
-		width: 25px;
-		height: 25px;
-		border-radius: 50%;
-		background: black;
-		opacity: 50%;
-	}
-	
-	.wrap::before {
-		position: absolute;
-		left: 5px;
-		top: 15px;
-		display: inline;
-		content: '';
-		width: 15px;
-		height: 1px;
-		background: white;
-	}
-	.wrap::after {
-		position: absolute;
 		left: 5px;
 		top: 19px;
 		display: inline;
@@ -194,176 +58,5 @@ body {
 		width: 15px;
 		height: 1px;
 		background: white;
-	}
-}
-	
-/* tablet, landscape iPad, lo-res laptops ands desktops */ 
-@media (min-width: 961px) {
-  .box__link {
-    flex-grow: 1;
-    font-size: 25px;
-    flex-direction: column;
-    visibility: hidden;
-	}
-		
-	.menu__box {
-		display: block;
-		position: fixed;
-		top: 0;
-		left: -100%;
-		width: 300px;
-		height: 100%;
-		margin: 0;
-		padding: 80px 0;
-		list-style: none;
-		visibility: hidden;
-	}
-	
-	.menu__mobile::before {
-		position: absolute;
-		left: 0;
-		top: 5px;
-		display: inline;
-		content: '';
-		width: 25px;
-		height: 25px;
-		border-radius: 50%;
-		background: black;
-		opacity: 50%;
-	}
-	
-	.wrap::before {
-		position: absolute;
-		left: 5px;
-		top: 15px;
-		display: inline;
-		content: '';
-		width: 15px;
-		height: 1px;
-		background: white;
-	}
-	.wrap::after {
-		position: absolute;
-		left: 5px;
-		top: 19px;
-		display: inline;
-		content: '';
-		width: 15px;
-		height: 1px;
-		background: white;
-	}
-}
-	
-/* big landscape tablets, laptops, and desktops */ 
-@media (min-width: 1025px) {
-	.box__link {
-    flex-grow: 1;
-    font-size: 30px;
-    flex-direction: column;
-    visibility: hidden;
-	}
-		
-	.menu__box {
-		display: block;
-		position: fixed;
-		top: 0;
-		left: -100%;
-		width: 300px;
-		height: 100%;
-		margin: 0;
-		padding: 80px 0;
-		list-style: none;
-		visibility: hidden;
-	}
-	
-	.menu__mobile::before {
-		position: absolute;
-		left: 0;
-		top: 5px;
-		display: inline;
-		content: '';
-		width: 25px;
-		height: 25px;
-		border-radius: 50%;
-		background: black;
-		opacity: 50%;
-	}
-	
-	.wrap::before {
-		position: absolute;
-		left: 5px;
-		top: 15px;
-		display: inline;
-		content: '';
-		width: 15px;
-		height: 1px;
-		background: white;
-	}
-	.wrap::after {
-		position: absolute;
-		left: 5px;
-		top: 19px;
-		display: inline;
-		content: '';
-		width: 15px;
-		height: 1px;
-		background: white;
-	}
-}
-	
-/* hi-res laptops and desktops */
-@media (min-width: 1281px) {
-  .box__link {
-    flex-grow: 1;
-    font-size: 35px;
-    flex-direction: column;
-	visibility: hidden;
-}
-		
-	.menu__box {
-		display: block;
-		position: fixed;
-		top: 0;
-		left: -100%;
-		width: 300px;
-		height: 100%;
-		margin: 0;
-		padding: 80px 0;
-		list-style: none;
-		visibility: hidden;
-	}
-	
-	.menu__mobile::before {
-		position: absolute;
-		left: 0;
-		top: 5px;
-		display: inline;
-		content: '';
-		width: 25px;
-		height: 25px;
-		border-radius: 50%;
-		background: black;
-		opacity: 50%;
-	}
-	
-	.wrap::before {
-		position: absolute;
-		left: 5px;
-		top: 15px;
-		display: inline;
-		content: '';
-		width: 15px;
-		height: 1px;
-		background: white;
-	}
-	.wrap::after {
-		position: absolute;
-		left: 5px;
-		top: 19px;
-		display: inline;
-		content: '';
-		width: 15px;
-		height: 1px;
-		background: white;
-	}
+	}	
 }
