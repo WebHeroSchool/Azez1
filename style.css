@@ -18,7 +18,7 @@
   border-radius: 50%;
   background: black;
   opacity: 50%;
- }
+}
 
 .burger::before {
 	content: '';
@@ -38,11 +38,11 @@
 	background: #fff;
 	position: absolute;
 	left: 2px;
-} 
+  } 
 
 .content { font-size: 36px; }
  
-@media screen and (max-width: 480px) {
+@media screen and ( max-width: 480px) {
 	
 	.nav__link { display: none; }
 		
@@ -56,7 +56,8 @@
 		width: 15px;
 		height: 1px;
 		background: white;
-	}
+  }
+	
 	.burger::after {
 		position: relative;
 		left: 5px;
@@ -76,21 +77,26 @@
 }	
 	
 @media projection, tv {
+	
 	.content { font-size: 30px; }
 }
 
 @media braille {
-	.content { font-size: 50px; }
+	
+  .content { font-size: 50px; }
 }
 
 @media handheald {
+	
 	.content { font-size: 10px; }
 }
 
-@media (min-width:641px) {
+@media ( min-width: 641px ) {
+	
 	.content { font-size: 25px; }
 }
 
-@media (min-width:961px) {
+@media ( min-width: 961px ) {
+	
 	.content { font-size: 28px; }
 }
