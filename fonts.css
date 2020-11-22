@@ -12,7 +12,7 @@
     url(fonts/Montserrat-Bold.woff) format("woff"),
     url(fonts/Montserrat-Bold.woff2) format("woff2");
   font-weight: bold;
-}         
+}        
 
 @font-face {
   font-family: "montserrat";
